@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание номер 1</title>
+ <script>
+ 	'use strict';
+ 	let Tc = +prompt("Введите температуру в градусах Цельсия: ");
+ 	let Tf = (9 / 5) * Tc + 32;
+ 	alert("Температура в Фаренгейтах: " + Tf);
+ </script>
+ </head>
+ <body>
+ </body>
+</html>
