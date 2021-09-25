@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание номер 2</title>
+ <script>
+ 	'use strict';
+ 	let name = 'Василий';
+ 	let admin;
+ 	admin = name;
+ 	console.log(admin);
+ 	alert("См консоль");
+ </script>
+ </head>
+ <body>
+ </body>
+</html>
