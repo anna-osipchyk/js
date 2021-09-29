@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание 2</title>
+ <script>
+ 	'use strict';
+ 	let a = 2;
+	let x = 1 + (a *= 2);//сначала а увеличится вдвое, потом прибавится к 1 и присвоится х. Таким образом а = 4 а х 5
+	alert(a + " " + x);
+	 </script>
+ </head>
+ <body>
+ </body>
+</html>
