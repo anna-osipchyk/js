@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание 3</title>
+ <script>
+ 	'use strict';
+ 	let  a, b;
+ 	a = +prompt("Введите первое число: ");
+ 	b = +prompt("Введите второе число: ");
+ 	if (a >= 0 && b >= 0)
+ 	{
+ 		alert(a-b);
+ 	}
+ 	else if(a < 0 && b < 0)
+ 	{
+ 		alert(a*b);
+ 	}
+ 	else if (a*b < 0) //но в данном случае подошел бы обычный else
+ 	{
+ 		alert(a+b);
+ 	}
+</script>
+ 
+ </head>
+ <body>
+ </body>
+</html>
