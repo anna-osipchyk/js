@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание 6</title>
+ <script>
+ 	'use strict';
+ 	 	function money(cash)
+ 	{
+ 		let last_didget = cash % 10;
+ 		if (last_didget == 0 || last_didget > 4)
+ 		{
+ 			return "На ваш баланс зачислено "  + cash + " рублей";
+ 		}
+ 		else if (last_didget == 1)
+ 		{
+			return "На ваш баланс зачислено "  + cash + " рубль";
+ 		}
+ 		else 
+ 		{
+			return "На ваш баланс зачислено "  + cash + " рубля";
+ 		}
+ 	}
+ 	alert(money(0) + "\n" + money(9871) + "\n" + money(999999) + "\n" + money(3) );
+ </script>
+ </head>
+ <body>
+ </body>
+</html>
