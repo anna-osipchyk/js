@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание 4</title>
+ <script>
+ 	'use strict';
+ 	function sum(a1, a2)
+ 	{
+ 		return a1+a2;
+ 	}
+ 	function sub(a1, a2)
+ 	{
+ 		return a1-a2;
+ 	}
+ 	function mul(a1, a2)
+ 	{
+ 		return a1*a2;
+ 	}
+ 	function div(a1, a2)
+ 	{
+ 		return a1/a2;
+ 	}
+ 	alert(sum(1,1) + " " + sub(1,1) + " " + mul(1,1) + " " + div(1,2));
+	</script>
+ 
+ </head>
+ <body>
+ </body>
+</html>
