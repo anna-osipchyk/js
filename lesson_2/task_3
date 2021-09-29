@@ -5,6 +5,7 @@
  <title>Задание 3</title>
  <script>
  	'use strict';
+  
  	let  a, b;
  	a = +prompt("Введите первое число: ");
  	b = +prompt("Введите второе число: ");
