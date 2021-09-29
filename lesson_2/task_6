@@ -5,6 +5,7 @@
  <title>Задание 6</title>
  <script>
  	'use strict';
+	
  	 	function money(cash)
  	{
  		let last_didget = cash % 10;
