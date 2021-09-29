@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание 5</title>
+ <script>
+ 	'use strict';
+ 	 	function sum(a1, a2)
+ 	{
+ 		return a1+a2;
+ 	}
+ 	function sub(a1, a2)
+ 	{
+ 		return a1-a2;
+ 	}
+ 	function mul(a1, a2)
+ 	{
+ 		return a1*a2;
+ 	}
+ 	function div(a1, a2)
+ 	{
+ 		return a1/a2;
+ 	}
+ 	function mathOperation(arg1, arg2, operation)
+ 	{
+ 		switch(operation)
+ 		{
+ 			case "+":
+ 				return sum(arg1, arg2);
+ 			case "-":
+ 				return sub(arg1,arg2);
+ 			case "*":
+ 				return mul(arg1,arg2);
+ 			case "/":
+ 				return div(arg1,arg2);
+ 		}
+
+ 	}
+ alert(mathOperation(1,1, "+") + " " + mathOperation(1,1,"-") + " " + mathOperation(1,1, "*") + " " + mathOperation(1,2,"/"));
+ </script>
+ </head>
+ <body>
+ </body>
+</html>
