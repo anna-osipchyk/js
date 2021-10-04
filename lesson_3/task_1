@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание 6</title>
+ <script>
+ 	'use strict';
+ 	 	for(let i =0; i< 11; i++)
+ 	 	{	
+ 	 		if (i==0)
+ 	 		{
+ 	 			console.log("Ноль")
+ 	 		}
+ 	 		else if (i%2)
+ 	 		{
+ 	 			console.log(i + " нечетное число")
+
+ 	 		}
+
+ 	 		else
+ 	 		{
+ 	 			console.log(i + " четное число")
+
+ 	 		}
+ 	 	}
+ </script>
+ </head>
+ <body>
+ </body>
+</html>
