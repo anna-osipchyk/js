@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание 6</title>
+ <script>
+ 	'use strict';
+ 	
+ 	const products = [
+{
+id: 3,
+price: 200,
+},
+{
+id: 4,
+price: 900,
+},
+{
+id: 1,
+price: 1000,
+},
+];
+products.forEach(function(product){
+	console.log(product.price*0.85);
+});
+let products_with_discount = products.map(function(product)
+{
+	return Object.assign({}, product, {price: product.price*0.85} )
+});
+console.log(products_with_discount);
+
+ </script>
+ </head>
+ <body>
+ </body>
+</html>
