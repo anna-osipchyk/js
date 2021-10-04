@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание 6</title>
+ <script>
+ 	'use strict';
+ 	let x = "";
+for(let i =1; i<21;i++)
+{
+	x+="x";
+	console.log(x);
+}
+ </script>
+ </head>
+ <body>
+ </body>
+</html>
