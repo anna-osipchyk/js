@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание 6</title>
+ <script>
+ 	'use strict';
+ 	const post = {
+			author: "John", //вывести этот текст
+		comments: [
+		{
+				userId: 10,
+				userName: "Alex",
+				text: "lorem ipsum",
+				rating: {
+				loremoremikes: 10,
+				dislikes: 2 //вывести это число
+		}
+	},
+		{
+			userId: 5, //вывести это число
+						userName: "Jane",
+				text: "lorem ipsum 2", //вывести этот текст
+				rating: {
+				likes: 3,
+				dislikes: 1
+		}
+		},
+	]
+};
+console.log(post.author);
+console.log(post.comments[0].rating.dislikes);
+console.log(post.comments[1].userId);
+console.log(post.comments[1].text);
+ </script>
+ </head>
+ <body>
+ </body>
+</html>
