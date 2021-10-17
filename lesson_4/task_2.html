@@ -1,0 +1,85 @@
+<!-- (это обязательное задание) Сделайте в стиле es5, а затем в стиле es6 (по аналогии из дополнительных
+видео -> 3 примеры наследования -> механика наследования),
+а) конструктор Post, который принимает параметры author, text, date и сохраняет их как свойства объекта. Объекты
+типа Post должны иметь метод edit, который будет принимать текст и записывать его в свойство text объекта.
+б) конструктор AttachedPost, который принимает параметры author, text, date. Проинициализируйте эти свойства с
+помощью конструктора Post, чтобы не дублировать код. Также в конструкторе AttachedPost должно создаваться
+свойство highlighted со значением false. Унаследуйте в объектах типа AttachedPost методы из Post.
+Объекты типа AttachedPost должны иметь метод makeTextHighlighted, который будет назначать свойству
+highlighted значение true. -->
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание 6</title>
+ <script>
+ 	'use strict';
+
+ 	function Post(author, text, date)
+ 	{
+ 		this.author = author;
+ 		this.text = text;
+ 		this.date = date;
+ 		this.edit = function(text)
+ 		{
+ 			this.text = text;
+ 		}
+ 	}
+ 	function AttachedPost(author, text, date)
+ 	{
+ 			Post.call(this,author, text, date);
+ 			this.ishighlighted = false;	
+ 			this.makehighleghted = function()
+ 		{
+ 			this.ishighlighted = true;
+ 		}
+ 	}
+
+ 	class Post_1
+ 	{
+ 		constructor(author, text, date)
+ 		{
+ 		this.author = author;
+ 		this.text = text;
+ 		this.date = date;
+ 		}
+ 		edit(text)
+ 		{
+ 			this.text = text;
+ 		}
+ 	}
+
+ 	class AttachedPost_1 extends Post_1
+ 	{
+ 		constructor(author, text, date)
+ 		{
+ 			super(author, text, date);
+ 			this.ishighlighted = false;	
+ 		
+ 		}
+ 		makehighleghted()
+ 		{
+ 			this.ishighlighted = true;
+ 		}
+ 		
+ 	}
+ 	let post_1 = new Post("a", "b", 2003);
+ 	post_1.edit(10);
+ 	console.log(post_1.text);
+ 	let att_post_1 = new AttachedPost("a", "b", 2003);
+ 	att_post_1.makehighleghted();
+ 	console.log(att_post_1.ishighlighted);
+
+ 	let post_2 = new Post_1("a", "b", 2003);
+ 	post_2.edit(10);
+ 	console.log(post_2.text);
+ 	let att_post_2 = new AttachedPost_1("a", "b", 2003);
+ 	att_post_2.makehighleghted();
+ 	console.log(att_post_2.ishighlighted);
+ 	
+
+ </script>
+ </head>
+ <body>
+ </body>
+</html>

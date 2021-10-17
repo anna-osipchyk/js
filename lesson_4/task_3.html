@@ -1,0 +1,60 @@
+<!-- (это обязательное задание) Сделайте в стиле es5, а затем в стиле es6 (по аналогии из дополнительных
+видео -> 3 примеры наследования -> типы на es5 и es6), конструктор Product, который принимает параметры name
+и price, сохраните их как свойства объекта. Также объекты типа Product должны иметь метод
+make25PercentDiscount, который будет уменьшать цену в объекте на 25%. Имейте в виду, что метод
+make25PercentDiscount не должен быть внутри функции-конструктора, и также не нужно создавать отдельный
+объект-прототип (как объект transport в уроке). -->
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Задание 6</title>
+ <script>
+ 	'use strict';
+ 	
+ 	class Numbers
+ 	
+ 	{
+ 		constructor(number)
+ 		{
+ 			//assert(num < 0 && num > 999);
+ 			this.number = number;
+ 		}
+ 		magic()
+ 		{
+ 			let tmp = this.number;
+ 			this.units = tmp%10;
+ 			tmp/=10;
+ 			tmp = Math.floor(tmp);
+ 			if (tmp>0)
+ 			{
+ 				this.tens = tmp%10;
+ 				tmp/=10;
+ 				tmp = Math.floor(tmp);
+ 			}
+
+ 			if (tmp>0)
+ 			{
+ 				this.hundreds = tmp%10;
+ 			}
+ 		}
+ 		show()
+ 		{
+ 			console.log("units " + this.units + " tens " +  this.tens + " hundreds " + this.hundreds);
+ 		}
+ 	}
+
+ 		let num = new Numbers(100);
+ 		num.magic();
+ 		num.show();
+ 		num.number = 111;
+ 		num.magic();
+ 		num.show();
+
+
+ </script>
+ </head>
+ <body>
+ </body>
+ 	}
+</html>
