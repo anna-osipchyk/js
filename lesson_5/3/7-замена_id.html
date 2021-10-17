@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <article>
+        <h2>title</h2>
+        text
+    </article>
+    <article>
+        <h2 id="title">title</h2>
+        text
+    </article>
+
+    <!-- Задание. найдите заголовок с id="title" и замените значение id
+    на что-то другое. -->
+
+</body>
+<script>
+    let h2 = document.getElementById("title");
+    h2.setAttribute('id', "not title");
+    console.log(h2.getAttribute('id'));
+</script>
+
+</html>

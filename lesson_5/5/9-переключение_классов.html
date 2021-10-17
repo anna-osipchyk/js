@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <i class="green">тут текст НЕ должен быть зеленым</i>
+    <i>здесь текст сделайте зеленым</i>
+    <i class="green">тут текст НЕ должен быть зеленым</i>
+    <i>здесь текст сделайте зеленым</i>
+
+    <!-- 
+    Задание.
+    1. Получите коллекцию тегов i.
+    2. Пробегитесь по этой коллекции и с помощью classList.toggle() сделайте,
+    чтобы где класс green есть, его не стало, а где нету, чтобы появился.
+    -->
+
+    <script>
+        'use strict';
+        let i = document.querySelectorAll('i');
+        i.forEach(function (elem) {
+            elem.classList.toggle('green');
+        });
+    </script>
+</body>
+
+</html>

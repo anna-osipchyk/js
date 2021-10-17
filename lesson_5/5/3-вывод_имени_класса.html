@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 class="one lorem">Заголовок 1</h2>
+    <h2 class="two ipsum">Заголовок 2</h2>
+    <h2 class="three">Заголовок 3</h2>
+
+    <!-- 
+    Задание.
+    1. Сохраните в переменную коллекцию с тегами h2, используйте метод getElementsByTagName()
+    2. Пробегитесь по этой коллекции с помощью цикла и выведите в консоль значение
+    атрибута class, используя свойство className.
+    -->
+
+    <script>
+        let h2 = document.getElementsByTagName('h2');
+        for (let i = 0; i < h2.length; i++) {
+            console.log(h2[i].className);
+        }
+    </script>
+</body>
+
+</html>

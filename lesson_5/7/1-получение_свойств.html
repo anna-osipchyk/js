@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="one" class="btn">Кнопка 1</button>
+
+    <!-- 
+    Задание.
+    1. Получите кнопку и сохраните ее в переменную.
+    2. Назначьте кнопке обработку клика.
+    3. У функции-обработчика клика сделайте параметр event
+    4. При клике из event.target выведите в консоль: id, имя класса (используйте
+    свойство className), текст на кнопке.
+    -->
+
+    <script>
+        'use strict';
+        let button = document.querySelector('button');
+        button.addEventListener('click', function (event) {
+            console.log(event.target.id, event.target.className, event.target.innerText);
+        });
+    </script>
+</body>
+
+</html>

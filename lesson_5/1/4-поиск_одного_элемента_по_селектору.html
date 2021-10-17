@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+      aria-valuemax="100"></div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+      aria-valuemax="100"></div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+      aria-valuemax="100"></div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+      aria-valuemax="100"></div>
+  </div>
+
+  <!-- Задание. Используя поиск по селектору (метод querySelector) найдите div с атрибутом
+    aria-valuenow="50" и выведите его в консоль. -->
+
+  <script>
+    let div = document.querySelector('div[aria-valuenow="50"]');
+    console.log(div);
+  </script>
+</body>
+
+</html>

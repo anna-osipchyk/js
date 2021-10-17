@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul>
+        <li>
+            <button>Кнопка</button>
+        </li>
+        <li>
+            <button>Кнопка</button>
+        </li>
+        <li>
+            <button>Кнопка</button>
+        </li>
+    </ul>
+
+    <!-- Задание. Назначьте обработчик клика по ul и при клике выводите в консоль
+    элемент, на котором произошел клик, с помощью event.target, где event - это
+    объект события, передаваемый в функцию-обработчик клика. -->
+
+    <script>
+        'use strict';
+        let ul = document.querySelector('ul');
+        ul.addEventListener('click', function (event) {
+            console.log(event.target);
+        });
+    </script>
+</body>
+
+</html>

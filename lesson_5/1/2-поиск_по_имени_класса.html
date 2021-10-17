@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="one">параграф 1</p>
+    <p>параграф</p>
+    <p class="one">параграф 2</p>
+    <h3 class="one">заголовок 1</h3>
+    <h3>заголовок 2</h3>
+
+    <!-- Задание. Используя поиск по имени класса, получите все элементы с классом .one
+    и выведите их в консоль. -->
+
+    <script>
+        let one = document.getElementsByClassName('one');
+        for (let i = 0; i < one.length; i++) {
+            console.log(one[i]);
+        }
+
+    </script>
+</body>
+
+</html>

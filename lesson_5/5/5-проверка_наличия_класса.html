@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="product hidden"></div>
+
+    <!-- Задание.
+    1. Вам нужно получить этот div.
+    2. Затем обратитесь к списку классов и с помощью метода contains()
+    проверьте есть ли класс hidden у этого тега.
+     -->
+    <script>
+        let div = document.getElementsByTagName('div')[0];
+        let flag = div.classList.contains('hidden')
+
+        console.log(flag);
+    </script>
+</body>
+
+</html>
