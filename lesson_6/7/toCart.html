@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="product">
+        <div>Товар 1</div>
+        <img src="images/1.jpg" alt="">
+        <button>В корзину</button>
+    </div>
+    <div class="product">
+        <div>Товар 1</div>
+        <img src="images/2.jpg" alt="">
+        <button>В корзину</button>
+    </div>
+    <div class="product">
+        <div>Товар 1</div>
+        <img src="images/3.jpg" alt="">
+        <button>В корзину</button>
+    </div>
+
+    <!-- Задание. Нужно чтобы при клике по кнопке, блок .product, в котором она
+    находится становился цвета (имеется в виду background) lightgreen, а текст на 
+	кнопке стал "Добавлено", для этого:
+    1. Найдите все кнопки, например с помощью querySelectorAll
+    2. Переберите полученную коллекцию кнопок, например с помощью forEach,
+    и каждой кнопке назначьте в качестве обработчика клика фукнцию
+    buttonClickHandler (увидите ее ниже в коде)
+    3. Когда функция buttonClickHandler будет срабатывать вы из объекта
+    события получаете элемент на котором произошло событие (свойство target),
+    затем получаете родителя кнопки по коротой кликнули (свойство parentNode),
+    затем обращаетесь к свойству style, а затем к свойству background и
+    ставите цвет lightgreen.
+    3.1 Также во время срабатывания функции buttonClickHandler из обекта
+    события (параметр event) вы получаете кнопку на которой произошло
+    событие (свойство target) и меняете у нее текст на "Добавлено".
+    -->
+
+    <script>
+
+
+        let buttons = document.querySelectorAll('button');
+        buttons.forEach(button => button.addEventListener('click', buttonClickHandler));
+
+        function buttonClickHandler(event) {
+            event.target.parentElement.style.background = 'lightgreen';
+            event.target.innerText = "Добавлено";
+        }
+    </script>
+</body>
+
+</html>

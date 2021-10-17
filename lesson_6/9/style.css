@@ -1,0 +1,12 @@
+#goToTop {
+    position: fixed;
+    z-index: 1;
+    right: 50px;
+    bottom: 50px;
+    background: orange;
+    padding: 30px;
+    font-size: 26px;
+    font-family: sans-serif;
+    cursor: pointer;
+    display: none;
+}

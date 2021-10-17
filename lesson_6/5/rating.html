@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <style>
+        i {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <i id="first" class="fas fa-star"></i>
+    <i id="second" class="fas fa-star"></i>
+    <i id="third" class="fas fa-star"></i>
+    <i id="fourth" class="fas fa-star"></i>
+    <i id="fifth" class="fas fa-star"></i>
+
+    <!-- Задание. Используя заготовку, сделайте чтобы при наведении на вторую звезду
+    подсвечивались первая и вторая звезды. При наведени на третью звезду подсвечивались
+    первая, вторая и третья звезды, и т.д. 
+    mouseover - это событие срабатывает когда мы наводим на элемент.
+    mouseout - это событие срабатывает когда мы перестаем наводить на элемент.
+	Вы можете пойти более продвинутым путем, и получать предыдущий элемент 
+	например с помощью https://mzl.la/3a4SPlR
+    -->
+
+    <script>
+        let firstStar = document.getElementById('first');
+        let secondStar = document.getElementById('second');
+        let thirdStar = document.getElementById('third');
+        let fourthStar = document.getElementById('fourth');
+        let fifthStar = document.getElementById('fifth');
+
+        firstStar.addEventListener('mouseover', function () {
+            firstStar.style.color = 'gold';
+        });
+
+        firstStar.addEventListener('mouseout', function () {
+            firstStar.style.color = '';
+        });
+
+        secondStar.addEventListener('mouseover', function () {
+            firstStar.style.color = 'gold';
+            secondStar.style.color = 'gold';
+        });
+
+        secondStar.addEventListener('mouseout', function () {
+            firstStar.style.color = '';
+            secondStar.style.color = '';
+        });
+        thirdStar.addEventListener('mouseover', function () {
+            firstStar.style.color = 'gold';
+            secondStar.style.color = 'gold';
+            thirdStar.style.color = 'gold';
+        });
+
+        thirdStar.addEventListener('mouseout', function () {
+            firstStar.style.color = '';
+            secondStar.style.color = '';
+            thirdStar.style.color = '';
+        });
+
+        fourthStar.addEventListener('mouseover', function () {
+            firstStar.style.color = 'gold';
+            secondStar.style.color = 'gold';
+            thirdStar.style.color = 'gold';
+            fourthStar.style.color = 'gold';
+        });
+
+        fourthStar.addEventListener('mouseout', function () {
+            firstStar.style.color = '';
+            secondStar.style.color = '';
+            thirdStar.style.color = '';
+            fourthStar.style.color = '';
+        });
+        fifthStar.addEventListener('mouseover', function () {
+            firstStar.style.color = 'gold';
+            secondStar.style.color = 'gold';
+            thirdStar.style.color = 'gold';
+            fourthStar.style.color = 'gold';
+            fifthStar.style.color = 'gold';
+        });
+
+        fifthStar.addEventListener('mouseout', function () {
+            firstStar.style.color = '';
+            secondStar.style.color = '';
+            thirdStar.style.color = '';
+            fourthStar.style.color = '';
+            fifthStar.style.color = '';
+        });
+    </script>
+</body>
+
+</html>

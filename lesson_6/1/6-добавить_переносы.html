@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+
+    <!-- 
+        Задание. Инпуты идут один за другим, надо сделать чтобы после каждого инпута
+        появился тег br, чтобы инпуты стали стоять один под другим. Для этого:
+        1. Получите все инпуты, например с помощью querySelectorAll.
+        2. Переберите их с помощью цикла или forEach, и после каждого инпута
+        встявляйте тег br, например с помощью insertAdjacentHTML.
+    -->
+
+    <script>
+        let inputs = document.querySelectorAll("input");
+        inputs.forEach(input => input.insertAdjacentHTML('afterend', "<br>"));
+    </script>
+</body>
+
+</html>

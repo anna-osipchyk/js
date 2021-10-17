@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="product">
+        <div class="productName">Товар 1</div>
+        <img src="images/1.jpg" alt="">
+        <button>В корзину</button>
+    </div>
+    <div class="product">
+        <div class="productName">Товар 1</div>
+        <img src="images/1.jpg" alt="">
+        <button>В корзину</button>
+    </div>
+    <div class="product">
+        <div class="productName">Товар 1</div>
+        <img src="images/1.jpg" alt="">
+        <button>В корзину</button>
+    </div>
+
+    <!-- Задание.
+    1. Сделайте всем элементам .product какой-нибудь фон, для этого:
+        1.1 Найдите все элементы с классом .product, например с помощью
+        querySelectorAll
+        1.2 Затем переберите эту коллекцию, например с помощью forEach,
+        у коллбэк-функции, передаваемой в forEach определите параметр,
+        назовите его например product
+        1.3 Чтобы менять стили обратитесь к параметру product и его свойству
+        style
+
+    2. Сделайте элементам .productName размер шрифта 24px, для этого:
+        2.1 Найдите все элементы с классом .productName, например с помощью
+        querySelectorAll
+        2.2 Затем переберите эту коллекцию, например с помощью forEach,
+        у коллбэк-функции, передаваемой в forEach определите параметр,
+        назовите его например name
+        2.3 Чтобы менять стили обратитесь к параметру name и его свойству
+        style
+    -->
+
+    <script>
+        let products = document.querySelectorAll(".product");
+        products.forEach(product => product.style.backgroundColor = "black");
+    </script>
+</body>
+
+</html>

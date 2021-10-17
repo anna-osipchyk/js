@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button>Показать блок</button>
+    <div class="message">
+        Lorem ipsum dolor sit.
+    </div>
+
+    <!-- Задание.
+    1. Сохраните в переменную btn ссылку на кнопку.
+    2. Сохраните в переменную msg ссылку на .message.
+    3. На btn назначьте обработку клика.
+        3.1 Внутри функции-обработчика сделайте чтобы у msg display становился block.
+        3.2 Для msg с помощью classList.add() добавьте классы animate__animated и
+        animate__fadeInLeftBig
+    -->
+
+    <script>
+        let btn = document.querySelector("button");
+        let msg = document.querySelector(".message");
+        btn.addEventListener("click", function (event) {
+            msg.classList.add("animate__animated", "animate__fadeInLeftBig");
+            msg.style.display = "block";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="from" type="text">
+    В инпуте написано: <span></span>
+
+    <!-- Задание.
+    1. Сохраните в переменную ссылку на span, например с помощью querySelector.
+    2. Сохраните в переменную fromEl ссылку на input, например с помощью getElementById.
+    3. Элементу fromEl назначьте обработку события change, у функции обработчика
+    этого события должен быть параметр event.
+    4. Читайте что было написано в input'e с помощью event.target.value и пишите это
+    значение в span.
+    -->
+
+    <script>
+        let span = document.querySelector('span');
+        let fromEl = document.querySelector('input')
+        fromEl.addEventListener('change', function (event) {
+            span.innerText = event.target.value
+
+        });
+
+    </script>
+</body>
+
+</html>
