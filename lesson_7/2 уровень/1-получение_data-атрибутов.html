@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button data-id="1" data-value="btn1">Кнопка 1</button>
+    <button data-id="2" data-value="btn2">Кнопка 2</button>
+    <button data-id="3" data-value="btn3">Кнопка 3</button>
+
+    <!-- 
+    Задание. Нужно при клике на кнопку выводить в консоль значения ее
+    data- атрибутов.
+    1. Получите все кнопки например с помощью querySelectorAll
+    2. Переберите полученную коллекцию, например с помощью forEach
+        2.1 data- атрибуты можете читать например с помощью свойства dataset
+        у каждой кнопки.
+    -->
+
+    <script>
+        let buttons = document.querySelectorAll('button');
+        buttons.forEach(button => console.log(button.dataset.value))
+    </script>
+</body>
+
+</html>

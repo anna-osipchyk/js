@@ -1,0 +1,9 @@
+.products {
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.product {
+    float: left;
+    margin-right: 20px;
+}
