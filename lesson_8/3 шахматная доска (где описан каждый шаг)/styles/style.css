@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.white {
+    background: #FFCF73;
+}
+
+.black {
+    background: #7a5000;
+}
+
+tr:last-child td:first-child {
+    border-left: none;
+    border-bottom: none;
+}
+
+.whiteFigure {
+    color: white;
+}
+
+.blackFigure {
+    color: black;
+}
+
+i {
+    font-size: 24px;
+    text-shadow: 0 0 3px grey;
+}
